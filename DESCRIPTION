@@ -1,0 +1,14 @@
+Package: PSEMR
+Type: Package
+Title: Causal Mediation Analysis with Multiple Causally Ordered Mediators
+Version: 0.1.1
+Author: Lei Hou
+Maintainer: Lei Hou <201815762@mail.sdu.edu.cn>
+Description: Causal Mediation Analysis with Multiple Causally Ordered Mediators Using Mendelian Randomization based on Summarized Genetic Data.
+Suggests: dagitty, ggdag, ggplot2
+Imports: dagitty, ggdag, ggplot2
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Date: 2020-08-24
+RoxygenNote: 7.0.2
