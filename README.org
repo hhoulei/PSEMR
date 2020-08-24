@@ -99,6 +99,25 @@ indirect_effect           se        ci_lower        ci_upper
 4.773205e-05    6.228396e-03   -1.203217e-02    1.346569e-02 
 #+END_EXAMPLE
 
+plot DAG
+#+BEGIN_EXAMPLE
+va <- c('BMI','CVD','TG','HDL','LDL')
+pl_ivw <- DAG_plot(va,pse_result=ivw_result,ylow=0.6,yup=3.2,tt='(l)')
+
+png('Applied_example-DAG.png',units="px",bg = "transparent")
+p_ivw[[2]]
+dev.off()
+
+logo <- readPNG("Applied_example-DAG.png")
+
+tiff(filename = "Applied_example-DAG.tif",bg = "transparent")
+grid.newpage()
+p_ivw[[1]]
+grid.raster(logo)
+dev.off()
+
+#+END_EXAMPLE
+
 
 
 
